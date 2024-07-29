@@ -14916,18 +14916,19 @@ function initialise() {
     }
   });
 }
+
 function update() {
   let guess = "";
   document.getElementById("answer").innerText = "";
 
   //string up the guess word
   for (let c = 0; c < width; c++) {
-    let currTile = document.getElementById(ro.toString() + "-" + c.toString());
+    let currTile = document.getElementById(row.toString() + "-" + c.toString());
     let letter = currTile.innerText;
     guess += letter;
   }
 
-  guess = guess.toLowerCase;
+  guess = guess.toLowerCase();
   if (!wordList.includes(guess)) {
     document.getElementById("answer").innerText = "Not in word list";
     return;
