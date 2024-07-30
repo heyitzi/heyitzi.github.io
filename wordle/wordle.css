@@ -4,10 +4,16 @@ body {
 }
 
 hr {
-  width: 500px;
+  max-width: 500px;
 }
 
-#title {
+h2 {
+  color: #1f1e1f;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+h1 {
   font-size: 36px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -39,7 +45,7 @@ hr {
 }
 
 .keyboard-row {
-  width: 410px;
+  width: 400px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -48,11 +54,11 @@ hr {
 .key-tile {
   /* Box */
   background-color: #d3d6da;
-  border: 1px solid lightgrey;
+  border: 1px solid #d3d6da;
   border-radius: 6px;
-  width: 34px;
+  width: 36px;
   height: 45px;
-  margin: 2.5px;
+  margin: 1px;
 
   /* text */
   font-size: 20px;
@@ -65,14 +71,13 @@ hr {
 .enter-key-tile {
   /* Box */
   background-color: #d3d6da;
-  border: 1px solid lightgrey;
+  border: 1px solid #d3d6da;
   border-radius: 6px;
-  width: 75px;
+  width: 76px;
   height: 45px;
-  margin: 2.5px;
+  margin: 1px;
 
   /* text */
-  color: black;
   font-size: 20px;
   font-weight: bold;
   display: flex;

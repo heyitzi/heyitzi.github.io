@@ -15012,6 +15012,7 @@ function update() {
     if (correct == width) {
       gameOver = true;
       jsConfetti.addConfetti();
+      document.getElementById("answer").innerText = "Congratulations!";
     }
   }
 
@@ -15019,12 +15020,12 @@ function update() {
   for (let c = 0; c < width; c++) {
     let currTile = document.getElementById(row.toString() + "-" + c.toString());
     let letter = currTile.innerText;
+    let keyTile = document.getElementById("Key" + letter);
 
     if (!currTile.classList.contains("correct")) {
       //is it in the word?
       if (word.includes(letter) && letterCount[letter] > 0) {
         currTile.classList.add("present");
-        let keyTile = document.getElementById("Key" + letter);
         if (!keyTile.classList.contains("correct")) {
           keyTile.classList.add("present");
         }
@@ -15033,6 +15034,7 @@ function update() {
       //not in the word
       else {
         currTile.classList.add("absent");
+        keyTile.classList.add("absent");
       }
     }
   }
