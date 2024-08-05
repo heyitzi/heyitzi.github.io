@@ -3,4 +3,65 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: "Antic Slab", Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar .container {
+  padding: 1rem 6%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f5f2eb;
+}
+
+.navbar .logo {
+  height: 30px;
+  overflow: hidden;
+}
+
+.navbar .logo a {
+  font-family: "Raleways", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ba7778;
+  letter-spacing: 3px;
+}
+
+.navbar .logo a strong {
+  font-family: "Raleways", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ba7778
+  letter-spacing: -3px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ba7778;
+}
+
+.navbar ul a:hover {
+  font-size: 16px;
+  font-weight: 600;
+  color: #905455;
+}
+
+.header {
+    /* Header image - the small details or something else? */
+    background-color: #EAD1D2;
 }
