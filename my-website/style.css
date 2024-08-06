@@ -92,3 +92,54 @@ header .section__container {
   align-items: center;
   justify-content: center;
 }
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: var(--extra-light);
+}
+
+.header__content h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 5rem;
+}
+
+.header__content p {
+  text-align: center;
+}
+
+.embroidery__container {
+  background-color: var(--secondary-color);
+}
+
+.embroidery__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 640px) {
+  nav__links {
+    display: flex;
+  }
+
+  header .section__container {
+    justify-content: flex-start;
+  }
+
+  .header__content {
+    max-width: 400px;
+    align-items: flex-start;
+  }
+
+  .header__content p {
+    text-align: left;
+  }
+
+  .embroidery__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
