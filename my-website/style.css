@@ -27,7 +27,7 @@
   font-size: 2rem;
   font-weight: 500;
   color: var(--primary-color);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -115,9 +115,20 @@ header .section__container {
   background-color: var(--secondary-color);
 }
 
-.embroidery__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.embroidery__gallery {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.embroidery__column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.embroidery__image {
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (min-width: 640px) {
@@ -137,9 +148,10 @@ header .section__container {
   .header__content p {
     text-align: left;
   }
+}
 
-  .embroidery__grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+@media (max-width: 768px) {
+  .embroidery__gallery {
+    flex-direction: column;
   }
 }
