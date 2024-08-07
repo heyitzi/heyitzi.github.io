@@ -115,27 +115,28 @@ header .section__container {
   background-color: var(--secondary-color);
 }
 
-.embroidery__gallery,
-.crochet__gallery {
+.crochet__container {
+  background-color: var(--extra-light);
+}
+
+.grid__gallery {
   display: flex;
   gap: 0.5rem;
 }
 
-.embroidery__column,
-.crochet__gallery {
+.grid__column {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
 
-.embroidery__image,
-.crochet__image {
+.grid__image {
   width: 100%;
   object-fit: cover;
 }
 
 footer {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-dark);
   color: var(--extra-light);
 }
 
@@ -159,8 +160,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .embroidery__gallery,
-  .crochet__gallery {
+  .grid__gallery {
     flex-direction: column;
   }
 }
