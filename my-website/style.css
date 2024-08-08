@@ -24,9 +24,9 @@
 }
 
 .section__title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  color: var(--primary-color);
+  color: var(--primary-color-dark);
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -109,6 +109,7 @@ header .section__container {
 
 .header__content p {
   text-align: center;
+  font-weight: 500;
 }
 
 .embroidery__container {
@@ -135,12 +136,16 @@ header .section__container {
   object-fit: cover;
 }
 
+.about__portrait {
+  width: 100%;
+}
+
 .about__description {
   padding: 1rem 0;
 }
 
 .about__description h4 {
-  color: var(--primary-color-dark);
+  color: var(--primary-color);
 }
 
 .about__description p {
