@@ -48,12 +48,12 @@ nav {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding: 2rem 1rem;
+  padding: 2rem 5rem;
   width: 100%;
-  max-width: var(--max-width);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--text-dark);
 }
 
 .nav__logo a {
@@ -85,8 +85,7 @@ nav {
 
 header {
   height: 100vh;
-  /* Add background image, then I can follow what the tutorial says */
-  /* If I add the images to the code, I can link it using the url below */
+  background-size: cover;
   background-image: linear-gradient(
       rgba(45, 92, 132, 0.5),
       rgba(45, 92, 132, 0.5)
@@ -214,11 +213,15 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
   .grid__gallery {
     flex-direction: column;
   }
 
-  .nav__links {
-    display: none;
+  header {
+    background-position: calc(50% + 100px) center; /* Translate 30px to the left */
   }
 }
