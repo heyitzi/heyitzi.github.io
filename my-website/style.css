@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .section__container {
   padding: 3rem 1rem;
   max-width: var(--max-width);
@@ -40,7 +44,7 @@ body {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -58,8 +62,12 @@ nav {
   font-size: 1.5rem;
 }
 
+.nav__links a {
+  text-decoration: none;
+}
+
 .nav__links {
-  display: none;
+  display: flex;
   list-style: none;
   align-items: center;
   gap: 2rem;
@@ -72,7 +80,7 @@ nav {
 }
 
 .link:hover {
-  color: var(--primary-color);
+  color: var(--text-light);
 }
 
 header {
@@ -83,7 +91,7 @@ header {
       rgba(45, 92, 132, 0.5),
       rgba(45, 92, 132, 0.5)
     ),
-    url();
+    url(assets/wallpaper.jpg);
 }
 
 header .section__container {
@@ -208,5 +216,9 @@ footer p {
 @media (max-width: 768px) {
   .grid__gallery {
     flex-direction: column;
+  }
+
+  .nav__links {
+    display: none;
   }
 }
