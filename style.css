@@ -159,6 +159,17 @@ header .section__container {
   margin-top: 0.5rem;
 }
 
+.about__description a {
+  text-decoration: underline;
+  color: var(--text-dark);
+}
+
+.about__description a:hover {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
 footer {
   background-color: var(--text-dark);
   color: var(--secondary-color);
